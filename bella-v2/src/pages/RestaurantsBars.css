@@ -1,0 +1,37 @@
+.restaurants {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .contentRrestaurent {
+    display: flex;
+  }
+  
+  .titleResturent {
+    font-size: 2.5em;
+    color: #b3965a;
+    margin-right: 20px;
+  }
+  
+  .descriptionRestaurent {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .imagerestaurent{
+    width: 40%;
+    margin-right: 20px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  
+  .textRestaurent {
+    width: 50%;
+  }
+  

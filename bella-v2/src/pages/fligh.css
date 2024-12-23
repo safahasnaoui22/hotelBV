@@ -1,0 +1,214 @@
+.flightca{
+margin-top: 150px;
+
+text-align: center;
+justify-content: center;
+margin-bottom: 40px;
+animation: fadeInLeft 2s ease forwards;
+}
+.flightdes{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 1000px;
+    text-align: center;
+justify-content: center;
+margin-left: 300px;
+animation: fadeInRight 2s ease forwards;
+}
+.mainflight{
+background-color: rgb(250, 246, 246);
+
+}
+.containerflight {
+    animation: slideFromBottom 3s ease forwards;
+    max-height: 600px;
+    max-width: 1200px;
+    min-height: 600px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(238, 216, 216);
+  
+    margin-bottom: 40px;
+}
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.panelflight {
+    height: 270px;
+    width: 190px;
+    position: relative;
+}
+
+.panelflight:hover .cardflight {
+    filter: blur(1.5px);
+}
+
+.panelflight:hover .card1flight {
+    background-size: 215% 135%;
+    animation: slideFromBottom 3s ease forwards;
+}
+
+.panelflight:hover .card2flight {
+    background-size: 115% 115%;
+    animation: slideFromBottom 3s ease forwards;
+}
+
+.panelflight:hover .card3flight {
+    background-size: 155% 115%;
+    animation: slideFromBottom 3s ease forwards;
+}
+
+.panelflight:hover .lineflight {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.panelflight:hover .borderflight {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.panelflight:hover .slideflight {
+    bottom: 0px;
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+.panelflight:hover .ringflight:before,
+.panelflight:hover .ringflight:after {
+    transform: translateX(-50%) translateY(-50%) rotate(310deg);
+}
+
+.ringflight,
+.cardflight,
+.borderflight,
+.slideflight,
+.lineflight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ringflight {
+    color: #fffbf1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 170px;
+    z-index: 2; /* Ensure it doesn't cover the slideflight */
+}
+
+.cardflight {
+    background: #070706;
+    position: relative;
+    transition: all 1s;
+    height: 270px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    z-index: 0; /* Ensure it doesn't cover the slideflight */
+}
+
+.card1flight {
+    background-image: url("https://th.bing.com/th/id/OIP.Yi9Cvg7fxkXk5ORrAjXcmAHaFN?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: 200% 120%;
+}
+
+.card2flight {
+    background-image: url("https://th.bing.com/th/id/R.d6b654f8a007a2b699015997d693cedd?rik=i5oixhCFQNRefA&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.card3flight {
+    background-image: url("https://th.bing.com/th/id/OIP.Yi9Cvg7fxkXk5ORrAjXcmAHaFN?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+}
+
+.ringflight:before,
+.ringflight:after {
+    content: "";
+    padding: 0.7em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #50c9c3;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+}
+
+.ringflight:before {
+    border-color: rgb(172, 165, 165) rgb(235, 235, 235) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.ringflight:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235) rgb(235, 235, 235);
+}
+
+.titleflight {
+    font-size: 36px;
+    font-weight: 700;
+    transition: all 1s;
+    top: 0;
+}
+
+.paraflight {
+    bottom: 0;
+    font-size: 20px; /* Updated font size */
+    font-family: "Raleway";
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: transparent; /* Background color red */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.paraflight a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Make the link fill the button */
+}
+
+.borderflight {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 260px;
+    width: 180px;
+    transition: border 1s;
+    overflow: hidden;
+}
+
+.slideflight {
+    height: 260px;
+    width: 180px;
+    position: absolute;
+    bottom: -270px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: bottom 1s;
+    flex-direction: column;
+    z-index: 1; /* Ensure it appears above other elements */
+}

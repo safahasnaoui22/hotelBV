@@ -1,0 +1,57 @@
+.privacy{
+  
+   justify-content: center;
+   align-items: center;
+   width: 1100px;
+   margin-left: 400px;
+}
+.privacytitle{
+    margin-top: 200px;
+}
+.contactprivcy{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(0, 4, 255);
+}
+@keyframes slide-left-to-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-left-to-right {
+    animation: slide-left-to-right 1s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out;
+  }
+  

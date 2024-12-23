@@ -1,0 +1,102 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.authtitle{
+  display: flex;
+  align-items: center;
+  
+  color: #b3965a !important;
+  margin-right: 20px;
+}
+  /* Container for form and image */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* Flex container for form and image sections */
+  .flex-container {
+    display: flex;
+  }
+  
+  /* Form section styles */
+  .form-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slogan {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .form-item {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .authinput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .alert {
+    color: #f00;
+    margin-bottom: 10px;
+  }
+  
+  .btnL {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btnL.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Image section styles */
+  .image-section {
+    flex: 1;
+  }
+  
+  .auth-image {
+    box-shadow: 0 30px 50px 10px rgba(100, 100, 100 , 2);
+    width: 100%;
+    height: auto;
+  }
+  .auth-image:hover{
+    transform: scale(1.1);
+  }

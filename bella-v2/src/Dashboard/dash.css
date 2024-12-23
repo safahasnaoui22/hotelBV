@@ -1,0 +1,50 @@
+.dash {
+    display: flex;
+
+  }
+  
+  /* Sidebar.css */
+  .sidebar {
+    margin-top: 300px;
+    margin-bottom: 40px;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    color: #ff66cc;
+  }
+  
+  /* MainContent.css */
+  .main-content {
+    margin-top: 150px;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-content h1 {
+    margin-bottom: 20px;
+  }
+  .roomDash{
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .bookingDash{
+    margin-top: 40px;
+  }

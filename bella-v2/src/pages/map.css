@@ -1,0 +1,14 @@
+.map{
+    margin-top: 250px;
+    width: 500px;
+    margin-left: 200px;
+    
+ margin-bottom: 40px;
+ box-shadow: 0 30px 50px 10px rgba(100, 100, 100 , 2);
+ border: 2px solid white;
+ transition: box-shadow 0.3s ease;
+}
+.map:hover{
+    box-shadow: 0 50px 80px 20px rgba(100, 100, 100, 0.3);
+    transform: translateY(-3px);
+}

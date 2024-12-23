@@ -1,0 +1,16 @@
+.roomlist{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-left: 100px;
+}
+.rommlistTitle{
+text-align: center;
+font-size: 45px;
+    margin-top: 40px;
+   
+}
+.tdlist{
+    display: flex;
+    justify-content: space-between;
+}

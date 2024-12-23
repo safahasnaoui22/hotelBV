@@ -1,0 +1,101 @@
+.services-container {
+  margin-left: 100px;
+  margin-right: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+  }
+  .ourservice{
+    text-align: center;
+
+    justify-content: center;
+    font-size: 2.5em;
+    color: #b3965a;
+
+  }
+  .service {
+    background-color: #f9f9f9 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   
+     margin-top: 40px;
+ 
+ height: 400px;
+ box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+ width: 350px;
+ transition: background-color 0.3s ease;
+ opacity: 0;
+ transform: translateX(-50%);
+ transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .service.animate-left-to-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .service:hover {
+    background-color: #e0e0e0; /* New background color on hover */
+    animation: bounce 0.5s; /* Apply animation on hover */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .top{
+    margin-top: 90px;
+  }
+  
+  .title {
+    font-size: 24px !important;
+    color: gray ;
+    margin-bottom: 10px !important;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 16px !important;
+    color: #666 !important;
+    line-height: 1.5 !important;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .service-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

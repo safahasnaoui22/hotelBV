@@ -1,0 +1,57 @@
+.admintable{
+ 
+    
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2booking{
+   margin-top: 100px;
+}
+.table-container {
+    position: relative;
+ 
+    overflow: scroll;
+  }
+  
+
+  /* default styling. Nothing to do with freexing first row and column */
+main {display: flex;}
+main > * {border: 1px solid;}
+table {border-collapse: collapse; font-family: helvetica}
+td, th {border:  1px solid;
+      padding: 10px;
+      min-width: 200px;
+      background: white;
+      box-sizing: border-box;
+      text-align: left;
+}
+.table-container {
+  position: relative;
+  max-height:  300px;
+  width: 500px;
+  overflow: scroll;
+}
+
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
+}
+.tradmin {
+    background-color: rgb(243, 235, 235);
+  
+}
+thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+.tableAdmin{
+    justify-content: center;
+    align-items: center;
+}

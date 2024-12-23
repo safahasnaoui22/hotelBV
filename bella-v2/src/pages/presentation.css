@@ -1,0 +1,291 @@
+/* presentation.css */
+
+.presentation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-left: 300px;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.move-from-left {
+  animation: moveFromLeft 1s ease forwards;
+}
+
+.move-from-right {
+  animation: moveFromRight 1s ease forwards;
+}
+
+.move-from-bottom {
+  animation: moveFromBottom 1s ease forwards;
+}
+
+.move-from-top {
+  animation: moveFromTop 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.image-container {
+  flex: 1;
+}
+
+.image {
+  padding: 20px;
+ 
+   margin-top: 40px;
+
+height: 500px;
+box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+width: 800px;;
+}
+
+.content-container {
+  margin-top: 60px !important;
+  flex: 1;
+  padding-left: 50px;
+  height: 400px;
+    width: 900px;
+    margin-top: 80px;
+   
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.titleHotel {
+  font-size: 2.5em;
+  color: #b3965a;
+  margin-right: 20px;
+}
+
+.star {
+  width: 150px;
+}
+
+.description-container {
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+.btn-more-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b3965a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+
+  transition: background-color 0.3s;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.btn-more-info:hover {
+  background-color: #936f3b;
+  transform: scale(1.1);
+}
+.chat{
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .presentation-container {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-left: 300px;
+  }
+
+  .image-container {
+    margin-bottom: 10px;
+  }
+
+  .titleHotel {
+    font-size: 2em;
+  }
+
+  .star {
+    width: 120px;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .btn-more-info {
+    padding: 8px 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .presentation-container {
+    
+ display: block;
+   
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .image-container {
+    flex: 1;
+  }
+  
+  .image {
+   
+  
+  height: 250px;
+  box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+  width: 800px;;
+  }
+  
+  .content-container {
+ 
+    
+     
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  
+  .titleHotel {
+    font-size: 2em;
+    color: #b3965a;
+    
+  }
+  
+  .star {
+    width: 100px;
+  }
+  
+  .description-container {
+   
+  }
+  
+  .description {
+    font-size: 1em;
+   
+    color: #666;
+  }
+  
+  .btn-more-info {
+  
+    padding: 5px 10px;
+    background-color: #b3965a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+   
+    transition: background-color 0.3s;
+   
+   
+  }
+  
+  .btn-more-info:hover {
+    background-color: #936f3b;
+  }
+  .chat{
+ margin-top: -40px;
+  }
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 576px) {
+  .titleHotel {
+    font-size: 1.5em;
+  }
+
+  .star {
+    width: 100px;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .btn-more-info {
+    padding: 6px 12px;
+  }
+}

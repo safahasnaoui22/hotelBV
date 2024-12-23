@@ -1,0 +1,24 @@
+/* styles.css */
+
+.containervideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+   /* Ensure the container takes the full height of the viewport */
+  }
+  
+  .video1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .videocomponent {
+
+  width: 1800px;
+    height: 600px;
+  }
+  
+ 

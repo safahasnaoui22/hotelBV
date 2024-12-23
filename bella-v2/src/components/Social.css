@@ -1,0 +1,80 @@
+/* SocialMediaButton.css */
+
+.social-media-container {
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .share-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .heart-icon {
+    width: 65px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .social-media-links {
+    position: absolute;
+    top: 0; /* Position below the button */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; /* Adjust spacing as needed */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 5s ease, top 5s ease; 
+  }
+  
+  .social-media-container:hover .social-media-links {
+    opacity: 1; /* Show on hover */
+    top: 100%; 
+  }
+  
+  .social-media-link {
+    margin: 10px 0; /* Adjust spacing between links */
+  }
+  
+  .social-media-link a {
+    color: white; /* Adjust link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex; /* Ensure circular shape */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 50%; /* Make circular */
+    width: 50px; /* Set width */
+    height: 50px;
+    border: 1px solid black; /* Set height */
+  }
+  
+  /* Custom colors for each icon */
+  .facebook {
+    background-color: #3b5998;
+    border-radius: 50%; /* Facebook blue */
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+    border-radius: 50%; /* Twitter blue */
+  }
+  
+  .instagram {
+    background-color: #c13584;
+    border-radius: 50%; /* Instagram pink */
+  }
+  
+  .linkedin {
+    background-color: #0077b5; 
+    border-radius: 50%;/* LinkedIn blue */
+  }
+  
+  .social-media-link a:hover {
+    color: #FF0000; /* Change color on hover */
+  }
+  

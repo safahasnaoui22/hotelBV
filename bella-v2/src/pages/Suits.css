@@ -1,0 +1,77 @@
+.suits-container {
+    display: flex;
+    margin-left: 300px;
+}
+
+.preT {
+    margin-top: 20px;
+    animation: slideInDown 1.5s forwards; /* Add animation for coming from top */
+}
+
+.roomsintro {
+    flex: 1;
+    animation: slideInLeft 1.5s forwards; /* Add animation for coming from right */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInRight 1.5s forwards; /* Add animation for coming from left */
+}
+
+.room-image {
+   
+    max-width: 100%;
+    height: 600px; 
+}
+
+.rommdesc {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-right: 100px;
+    margin-top: 40px;
+    text-align: center;
+}
+.resturentdesc{
+    margin-left: 50px;
+    margin-top: 60px;
+    text-align: center;
+}
+.restaurenttitle{
+    text-align: center;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

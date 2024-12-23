@@ -1,0 +1,67 @@
+.youreservation{
+ 
+    display: flex;
+    margin-top: 200px;
+    
+    justify-content: center;
+    font-family: serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.pre{
+    background-color: rgb(230, 228, 228);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: serif;
+    line-height: 2.5;
+}
+.yourreservationbtns{
+    display: flex;
+    margin-top: 20px;
+   color: white;
+    font-size: 20px;
+}
+.confirm{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+  margin-right: 20px;
+    border: none;
+    border-Radius: 4px;
+    cursor: pointer;
+}
+.Edit{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    border: none;
+    border-Radius: 4px;
+    cursor: pointer;
+}
+.delete{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    margin-right: 20px;
+    border: none;
+    border-Radius: 4px;
+    cursor: pointer;
+}
+.hombtn{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #b3965a;
+    color: white;
+    margin-right: 20px;
+    border: none;
+    border-Radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+.book-form {
+  background: white;
+  margin-left: 200px;
+  border: 1px solid rgb(255, 255, 255);
+ 
+}
+.form-divider {
+  border-right: 1px solid rgba(128, 128, 128, 0.507); /* Adjust the border properties as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+/* BookForm.css */
+
+/* Style the calendar */
+.react-datepicker {
+
+  font-family: Arial, sans-serif; /* Example font */
+  border-radius: 8px; /* Example border-radius */
+  border: 1px solid #ccc; /* Example border */
+  box-shadow: 0 2px 4px rgba(100, 100, 100, 54); /* Example box-shadow */
+}
+
+.react-datepicker__month-container {
+  padding: 16px; /* Example padding */
+}
+
+.react-datepicker__month {
+  margin: 0; /* Example margin */
+}
+
+.react-datepicker__day {
+  padding: 8px; /* Example padding */
+}
+
+.react-datepicker__day--selected {
+  background-color: #4a90e2; /* Example background-color for selected day */
+  color: white; /* Example text color for selected day */
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #4a90e2; /* Example background-color for keyboard selected day */
+  color: white; /* Example text color for keyboard selected day */
+}
+
+.react-datepicker__day:hover {
+  background-color: #f0f0f0; /* Example background-color on hover */
+}
+
+.formname {
+  color: rgb(53, 51, 51);
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form-label {
+ 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  color: gray;
+  background-color: #e0c89762;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+
+
+}
+
+.formbtn {
+ 
+
+ width: 100%;
+
+
+
+}
+@media only screen and (min-width: 576px) {
+  .form-divider {
+    margin-right: 10px; /* Adjust margin for small screens */
+  }
+
+  .formname {
+    margin-left: 10px; /* Adjust margin for small screens */
+  }
+
+  .form-row {
+    gap: 10px; /* Adjust gap for small screens */
+  }
+}

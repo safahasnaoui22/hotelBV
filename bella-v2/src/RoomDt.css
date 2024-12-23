@@ -1,0 +1,104 @@
+.sectionone{
+
+    height: 500px;
+    background-color: gray;
+}
+.imsectionone{
+  
+    height: 500px;
+    width: 650px;
+    margin-left: 600px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; 
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.roomDetails{
+    padding: 20px;
+   background-color: rgb(245, 245, 245);
+    margin-top: 20px;
+
+height: 400px;
+box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+width: 400px;
+}
+.roomDetails:hover {
+  background-color: #e0e0e0; /* New background color on hover */
+  animation: bounce 0.5s; /* Apply animation on hover */
+}
+.RoomDtBtn{
+    
+}
+.sectiontow{
+  
+    display: flex;
+    justify-content: center;
+}
+.imageroomdt{
+    height: 400px;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 40px;
+    box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+}
+.imageroomdt:hover {
+  background-color: #e0e0e0; /* New background color on hover */
+  animation: bounce 0.5s; /* Apply animation on hover */
+}
+.facilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+  .facility {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .facility i {
+    margin-right: 5px;
+  }
+  
+  .facility span {
+    font-size: 16px;
+  }
+  .roomIcons svg {
+    color: #b3965a;
+    font-size: 30px;
+    margin-right: 30px;
+    margin-top: 23px;
+  }
+  .roomIcons svg:hover {
+    color: #c09c54;
+    font-size: 40px;
+    margin-right: 40px;
+    margin-top: 29px;
+    animation: bounce 0.5s; /* Apply animation on hover */
+  }
+  .sectionthree{
+    display: flex;
+    justify-content: center
+  }  
+  .sectionthreepart1{
+    height: 400px;
+    width: 900px;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+  .sectionthreeparttow{
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+     margin-top: 40px;
+ 
+ height: 400px;
+ box-shadow: 10px 14px 18px rgba(73, 47, 47, 0.1);
+ width: 400px;
+  }
+  .sectionthreeparttow:hover {
+    background-color: #e0e0e0; /* New background color on hover */
+    animation: bounce 0.5s; /* Apply animation on hover */
+  }

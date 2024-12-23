@@ -1,0 +1,154 @@
+.wrappervideo {
+    --color: #1F242D;
+    --color-invert: #ffffff;
+    --clip-path: circle(15px at left);
+    --clip-path-hover: circle(70px at left);
+    --clip-path-clicked: circle(100vw at left);
+    --duration: .2s;
+    --timing-function: ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ 
+
+  }
+  
+  .videovideo {
+    margin-top: 10px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+  }
+  
+  .videovideo video {
+    position: fixed;
+    background: #c4cbde;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  
+  .textvideo {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2px;
+    opacity: var(--opacity, 1);
+    transition: opacity .3s var(--timing-function) .2s;
+  }
+  
+  .textvideo::before,
+  .textvideo::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 25px;
+    height: 0;
+  }
+  
+  .textvideo::before {
+    box-shadow: 26px 0 0 1px var(--color);
+    right: var(--r, 100%);
+    opacity: var(--opacity, 0);
+    transition: right .5s ease-in, opacity .1s linear;
+  }
+  
+  .textvideo::after {
+    box-shadow: 26px 0 0 1px var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+  }
+  
+  .textvideo span::before,
+  .textvideo span::after {
+    content: attr(data-text);
+    padding-left: 26px;
+    font-style: italic;
+    font-size: 10px;
+  }
+  
+  .textvideo span::before {
+    color: var(--color);
+  }
+  
+  .textvideo span::after {
+    color: var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    position: absolute;
+    left: 0;
+  }
+  
+  .inputvideo {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    outline: none;
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .inputvideo:focus {
+    outline: 0;
+  }
+  
+  .inputvideo:hover ~ .textvideo {
+    clip-path: var(--clip-path-hover);
+  }
+  
+  .inputvideo:hover ~ .textvideo::before {
+    --r: 25px;
+    --opacity: 1;
+  }
+  
+  .inputvideo:hover ~ .textvideo::after {
+    clip-path: var(--clip-path-hover);
+  }
+  
+  .inputvideo:hover ~ .textvideo > span::after {
+    clip-path: var(--clip-path-hover);
+  }
+  
+  .inputvideo:checked {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  
+  .inputvideo:checked ~ .videovideo {
+    clip-path: var(--clip-path-clicked);
+  }
+  
+  .inputvideo:checked ~ .textvideo {
+    --opacity: 0;
+    transition: opacity .3s var(--timing-function);
+  }
+  
+  .inputvideo:checked ~ .textvideo::after {
+    clip-path: var(--clip-path-clicked);
+  }
+  
+  .inputvideo:checked ~ .textvideo > span::after {
+    clip-path: var(--clip-path-clicked);
+  }
+  
+
+ 
